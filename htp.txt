@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+	ServerName devweb3exercicecours6.com
+	DocumentRoot "${INSTALL_DIR}/www/devweb3exercicecours6"
+	
+	<Directory  "${INSTALL_DIR}/www/devweb3exercicecours6/">
+		Options +Indexes +Includes +FollowSymLinks +MultiViews
+		AllowOverride All
+		Require local
+	</Directory>
+</VirtualHost>
